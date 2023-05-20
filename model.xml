@@ -1,58 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-	<featureModel>
-		<properties/>
-		<struct>
-			<and abstract="true" mandatory="true" name="Notepad">
-				<feature name="FullStyled"/>
-				<feature name="Print"/>
-				<alt abstract="true" name="Format">
-					<feature name="FormatRaw"/>
-					<feature name="FormatStyled"/>
-				</alt>
-				<feature name="Find"/>
-				<feature name="Clipboard"/>
-				<feature name="Undo"/>
-				<feature name="File"/>
-				<feature name="MenuBar"/>
-				<feature name="ToolBar"/>
-				<alt abstract="true" mandatory="true" name="Text">
-					<feature name="TextRaw"/>
-					<feature name="TextStyled"/>
-				</alt>
-				<feature mandatory="true" name="Base"/>
-			</and>
-		</struct>
-		<constraints>
-			<rule>
-				<imp>
-					<var>FormatRaw</var>
-					<var>TextRaw</var>
-				</imp>
-			</rule>
-			<rule>
-				<imp>
-					<var>FormatStyled</var>
-					<var>TextStyled</var>
-				</imp>
-			</rule>
-		</constraints>
-		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
-		<comments>
-			<c> non-grammar constraints</c>
-		</comments>
-		<featureOrder userDefined="true">
-			<feature name="Base"/>
-			<feature name="TextRaw"/>
-			<feature name="ToolBar"/>
-			<feature name="MenuBar"/>
-			<feature name="File"/>
-			<feature name="Undo"/>
-			<feature name="Clipboard"/>
-			<feature name="Find"/>
-			<feature name="FormatRaw"/>
+<featureModel>
+	<properties>
+		<calculations key="tautology" value="true"/>
+		<calculations key="auto" value="true"/>
+		<graphics key="showconstraints" value="true"/>
+		<calculations key="redundant" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+		<calculations key="features" value="true"/>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<calculations key="constraints" value="true"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="Notepad">
 			<feature name="Print"/>
-			<feature name="FullStyled"/>
-			<feature name="FormatStyled"/>
-			<feature name="TextStyled"/>
-		</featureOrder>
-	</featureModel>
+			<alt abstract="true" name="Format">
+				<graphics key="collapsed" value="false"/>
+				<feature name="FormatRaw"/>
+				<feature name="FormatStyled"/>
+			</alt>
+			<feature name="Find"/>
+			<feature name="Clipboard"/>
+			<feature name="Undo"/>
+			<feature name="File"/>
+			<feature name="MenuBar"/>
+			<feature name="ToolBar"/>
+			<alt abstract="true" mandatory="true" name="Text">
+				<graphics key="collapsed" value="false"/>
+				<feature name="TextRaw"/>
+				<feature name="TextStyled"/>
+			</alt>
+			<feature mandatory="true" name="Base"/>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>FormatRaw</var>
+				<var>TextRaw</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FormatStyled</var>
+				<var>TextStyled</var>
+			</imp>
+		</rule>
+	</constraints>
+	<comments>
+		<c> non-grammar constraints</c>
+	</comments>
+	<featureOrder userDefined="true">
+		<feature name="Base"/>
+		<feature name="TextRaw"/>
+		<feature name="ToolBar"/>
+		<feature name="MenuBar"/>
+		<feature name="File"/>
+		<feature name="Undo"/>
+		<feature name="Clipboard"/>
+		<feature name="Find"/>
+		<feature name="FormatRaw"/>
+		<feature name="Print"/>
+		<feature name="FormatStyled"/>
+		<feature name="TextStyled"/>
+	</featureOrder>
+</featureModel>

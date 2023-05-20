@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
 	<feature automatic="selected" name="Notepad"/>
-	<feature manual="selected" name="FullStyled"/>
-	<feature manual="selected" name="Print"/>
-	<feature automatic="selected" name="Format"/>
-	<feature automatic="unselected" name="FormatRaw"/>
-	<feature manual="selected" name="FormatStyled"/>
-	<feature manual="selected" name="Find"/>
-	<feature manual="selected" name="Clipboard"/>
-	<feature manual="selected" name="Undo"/>
-	<feature manual="selected" name="File"/>
-	<feature manual="selected" name="MenuBar"/>
-	<feature manual="selected" name="ToolBar"/>
+	<feature name="FullStyled"/>
+	<feature name="Print"/>
+	<feature name="Find"/>
+	<feature name="Clipboard"/>
+	<feature name="Undo"/>
+	<feature name="File"/>
+	<feature name="MenuBar"/>
+	<feature name="ToolBar"/>
 	<feature automatic="selected" name="Text"/>
 	<feature automatic="unselected" name="TextRaw"/>
-	<feature automatic="selected" manual="selected" name="TextStyled"/>
+	<feature manual="selected" name="TextStyled"/>
+	<feature name="Format"/>
+	<feature automatic="unselected" name="FormatRaw"/>
+	<feature name="FormatStyled"/>
 	<feature automatic="selected" name="Base"/>
 </configuration>

@@ -1,6 +1,6 @@
 
 class Notepad {
-	Notepad() {
+	public Notepad() {
 		StyledDocument doc = getTextPane().getStyledDocument();
 		Style regular = doc.addStyle("regular", 
 			StyleContext.getDefaultStyleContext().getStyle(StyleContext.DEFAULT_STYLE));
