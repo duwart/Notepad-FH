@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <configuration>
 	<feature automatic="selected" name="Notepad"/>
-	<feature name="FullStyled"/>
 	<feature name="Print"/>
+	<feature name="Format"/>
+	<feature name="FormatRaw"/>
+	<feature automatic="unselected" name="FormatStyled"/>
 	<feature name="Find"/>
 	<feature name="Clipboard"/>
 	<feature name="Undo"/>
@@ -10,10 +12,7 @@
 	<feature name="MenuBar"/>
 	<feature name="ToolBar"/>
 	<feature automatic="selected" name="Text"/>
-	<feature automatic="unselected" name="TextRaw"/>
-	<feature manual="selected" name="TextStyled"/>
-	<feature name="Format"/>
-	<feature automatic="unselected" name="FormatRaw"/>
-	<feature name="FormatStyled"/>
+	<feature manual="selected" name="TextRaw"/>
+	<feature automatic="unselected" name="TextStyled"/>
 	<feature automatic="selected" name="Base"/>
 </configuration>

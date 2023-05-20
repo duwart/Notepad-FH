@@ -93,6 +93,16 @@ class  Notepad  extends JFrame {
 	}
 
 	
+	protected void buildTextPanel  () {
+		Container cp = getContentPane();
+		textArea = new JTextArea();
+		textArea.setLineWrap(false);
+		textArea.setWrapStyleWord(false);
+		cp.add(textArea);
+		cp.add(new JScrollPane(textArea));
+	}
+
+	
 	public Notepad  () {
 		super();
 		//set the title for Notepad and set the size for it.
@@ -109,32 +119,32 @@ class  Notepad  extends JFrame {
 				actions.exit();
 			}
 		});
+		
+		buildTextPanel();
+		
 	
-		Container cp = getContentPane();
-		textPane = new JTextPane();
-		cp.add(textPane);
-		cp.add(new JScrollPane(textPane));
+		
 	}
 
 	
 	//Main Method
 	public static void main(String[] args){
-		new Notepad().show();
+		new Notepad().setVisible(true);
 	}
 
 	
 	//declaration of the private variables used in the program
 	//create the text area
-	private JTextPane textPane;
+	private JTextArea textArea;
 
 	
-	public JTextPane getTextPane() {
-		return textPane;
+	public JTextArea getTextArea() {
+		return textArea;
 	}
 
 	
 	public JTextComponent getTextComponent() {
-		return textPane;
+		return textArea;
 	}
 
 

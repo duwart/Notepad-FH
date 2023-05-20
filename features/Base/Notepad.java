@@ -78,6 +78,10 @@ public class Notepad extends JFrame{
 		JToolBar toolBar = new JToolBar("Tool Bar");
 		return toolBar;
 	}
+	
+	protected void buildTextPanel() {
+		
+	}
 	//Constructor of Notepad
 	public Notepad() {
 		super();
@@ -95,9 +99,12 @@ public class Notepad extends JFrame{
 				actions.exit();
 			}
 		});
+		
+		buildTextPanel();
+		
 	}
 	//Main Method
 	public static void main(String[] args){
-		new Notepad().show();
+		new Notepad().setVisible(true);
 	}
 }

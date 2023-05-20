@@ -6,6 +6,9 @@ class Notepad {
 	//create the text area
 	private JTextPane textPane;
 	public Notepad() {
+
+	}
+	protected void buildTextPanel() {
 		Container cp = getContentPane();
 		textPane = new JTextPane();
 		cp.add(textPane);
