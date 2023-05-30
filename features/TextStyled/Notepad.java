@@ -5,7 +5,10 @@ class Notepad {
 	//declaration of the private variables used in the program
 	//create the text area
 	private JTextPane textPane;
-	Notepad() {
+	public Notepad() {
+
+	}
+	protected void buildTextPanel() {
 		Container cp = getContentPane();
 		textPane = new JTextPane();
 		cp.add(textPane);
